@@ -1,0 +1,25 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>A Portuguese Actuary </title>
+        <link>/vchagas69.github.io/public/</link>
+        <language>en-us</language>
+        <author>Vitor Chagas</author>
+        <rights>(c) 2020</rights>
+        <updated>2020-09-06 00:00:00 &#43;0000 UTC</updated>
+
+        
+        
+            <item>
+            <title>Posts</title>
+            <link>/vchagas69.github.io/public/post/</link>
+            <pubDate>Sun, 06 Sep 2020 00:00:00 UTC</pubDate>
+            <author>Vitor Chagas</author>
+            <guid>/vchagas69.github.io/public/post/</guid>
+            <description></description>
+            </item>
+        
+        
+        
+        
+    </channel>
+</rss>

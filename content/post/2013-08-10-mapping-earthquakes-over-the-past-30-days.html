@@ -1,0 +1,108 @@
+---
+title: Mapping Earthquakes Over the Past 30 Days
+author: Vitor Chagas
+date: '2013-08-10'
+slug: mapping-earthquakes-over-the-past-30-days
+categories:
+  - R
+tags: []
+description: ''
+image: ''
+---
+
+
+
+<div id="introduction" class="section level1">
+<h1>Introduction</h1>
+<p>After reading this <a href="http://statistical-research.com/earthquakes-over-the-past-7-days/">post</a> I decided to try it and adapt to my own needs.</p>
+<p>This is just a simple example that uses real-time data from the U.S. Geological Survey.</p>
+<p>This shows the location of earthquakes with any magnitude over the last month around Puerto Rico (just had to pick some place with earthquakes!).</p>
+<div id="the-code" class="section level2">
+<h2>The Code</h2>
+<pre class="r"><code>#===========================================================================
+# project : aportugueseactuary.blogspot.pt
+#  script : Mapping_Earthquakes_Over_the_Past30_Days.R
+#  author : Vitor Chagas
+# updated : 2013.08.10
+#===========================================================================
+
+#---------------------------------------------------------------------------
+# reset workspace
+#---------------------------------------------------------------------------
+
+rm(list = ls())
+gc()
+
+#---------------------------------------------------------------------------
+# create &amp; set work directory root
+#---------------------------------------------------------------------------
+
+# change as needed
+workdir &lt;- &#39;.&#39;
+
+dir.create(workdir, recursive=TRUE)
+setwd(workdir)
+rm(workdir)
+
+#---------------------------------------------------------------------------
+# create folder tree (needed folders)
+#---------------------------------------------------------------------------
+
+#dir.create(&#39;data&#39;)
+
+#---------------------------------------------------------------------------
+# install &amp; load necessary packages
+#---------------------------------------------------------------------------
+
+necessary = c(&#39;ggmap&#39;)
+
+installed = necessary %in% .packages(all.available = TRUE)
+
+# install
+if (length(necessary[!installed]) &gt;=1) 
+  install.packages(necessary[!installed])
+
+# load
+for(pkg in necessary) 
+  library(pkg, character.only=TRUE)  
+
+rm(necessary, installed, pkg)
+
+#---------------------------------------------------------------------------
+# get earthquake data
+#---------------------------------------------------------------------------
+
+file.url &lt;- c(
+  url=&#39;http://earthquake.usgs.gov/&#39;,
+  path=&#39;earthquakes/feed/v1.0/summary/&#39;,
+  file=&#39;all_month.csv&#39;
+  )
+
+eq &lt;- read.table(file=paste(file.url, collapse=&#39;&#39;),
+                 fill=TRUE, sep=&#39;,&#39;, header=TRUE)
+
+# rename columns
+names(eq)[2] &lt;- &#39;lat&#39;
+names(eq)[3] &lt;- &#39;lon&#39;
+
+# discretize magnitude into 5 intervals
+eq$mag.size &lt;- findInterval(eq$mag, c(0,2,4,6,8,10))
+
+#---------------------------------------------------------------------------
+# generate map
+#---------------------------------------------------------------------------
+
+# map center (some place with earthquakes)
+center &lt;- geocode(&#39;Puerto Rico&#39;)
+location &lt;- c(center$lon,center$lat)
+
+# get map from Google
+map &lt;- get_map(location = location, zoom=7, maptype=&#39;roadmap&#39;)
+
+# display earthquake data
+ggmap(map, extent = &#39;device&#39;) +
+  geom_point(data=eq,
+             mapping=aes(x = lon, y = lat, colour=mag)) + 
+  scale_colour_gradient(limits=c(0, 9.9), low=&quot;yellow&quot;, high=&quot;red&quot;)</code></pre>
+</div>
+</div>

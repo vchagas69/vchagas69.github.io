@@ -1,0 +1,55 @@
+---
+title: A way to simplify package use on a R project
+author: Vitor Chagas
+date: '2013-08-19'
+slug: a-way-to-simplify-package-use-on-a-r-project
+categories:
+  - R
+tags: []
+description: ''
+image: ''
+---
+
+
+
+<div id="introduction" class="section level1">
+<h1>Introduction</h1>
+<p>One of the steps that I always do when I begin an <em>R</em> script is to check if all the needed packages are installed, and if not install them.</p>
+<p>That way I know that the script won’t crash on another computer because of a missing package (one less reason to crash :D).</p>
+<p>Lately I’ve been thinking about the subject of code reuse and decided to transform my block of code in to an <em>R</em> function.</p>
+<p>##The Code</p>
+<pre class="r"><code>#««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««
+#  script : loadlib.R
+#  author : Vitor Chagas(VC)                last updated : 2013.08.19
+#««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««
+
+# install &amp; load necessary packages ----
+#&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+
+loadlibs &lt;- function(...) {
+
+  necessary &lt;- as.vector(as.character(match.call()[-1]))
+
+  installed &lt;- necessary %in% .packages(all.available = TRUE)
+
+  # install
+  if (length(necessary[!installed]) &gt;=1)
+    install.packages(necessary[!installed])
+
+  # update
+  update.packages()
+
+  # load
+  for(pkg in necessary)
+    library(pkg, character.only=TRUE)  
+
+  rm(necessary, installed, pkg)
+}</code></pre>
+<div id="final-comments" class="section level2">
+<h2>Final comments</h2>
+<p>Now I just save this code into a lib folder, and then use the following code to source every code file in there</p>
+<pre class="r"><code>sapply(list.files(pattern=&quot;*.R&quot;, path=&quot;lib&quot;, full.names=TRUE),
+       source,.GlobalEnv)</code></pre>
+<pre><code>## named list()</code></pre>
+</div>
+</div>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Puppy on A Portuguese Actuary</title>
+    <link>/vchagas69.github.io/public/tags/puppy/</link>
+    <description>Recent content in Puppy on A Portuguese Actuary</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Thu, 20 Aug 2009 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/vchagas69.github.io/public/tags/puppy/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Goodbye Windows ... Hello Linux </title>
+      <link>/vchagas69.github.io/public/2009/08/20/goodbye-windows-hello-linux/</link>
+      <pubDate>Thu, 20 Aug 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/vchagas69.github.io/public/2009/08/20/goodbye-windows-hello-linux/</guid>
+      <description>After several (failed) attempts of adopting Linux as my main Operating System, I finally found a friendly enough Linux distro for a long time Microsoft user.
+It is Puppy Linux (http://www.puppylinux.org) and is currently on release 4.20.
+Download the CD image from the URL below.
+http://distro.ibiblio.org/pub/linux/distributions/puppylinux/puppy-4.2-k2.6.25.16-seamonkey.iso
+My adventures with this OS will definitely produce interesting writing material.</description>
+    </item>
+    
+  </channel>
+</rss>

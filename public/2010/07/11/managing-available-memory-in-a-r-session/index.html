@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="theme-color" content="#000" />
+    <title>
+        
+            Managing available memory in a R session &middot; A Portuguese Actuary Hugo Theme - Prav
+        
+    </title>
+
+    
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css"
+        integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+    
+    
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+    
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300&family=Merriweather:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/atom.xml" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="">
+    
+    
+    <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+    
+
+    
+    <meta name="author" content="Vitor Chagas"></head>
+<body>
+        <div class="container"><div id="navbar" class="pure-menu pure-menu-open pure-menu-horizontal pure-menu-scrollable">
+    <a href="/" class="pure-menu-heading">
+         
+            A Portuguese Actuary 
+         
+    </a>
+    <ul class="pure-menu-list">
+        <li class="pure-menu-item">
+            <a href="/post" class="pure-menu-link">
+                <i class="fa fa-archive"></i>
+                Articles
+            </a>
+        </li>
+        <li class="pure-menu-item">
+            <a href="/tags" class="pure-menu-link">
+                <i class="fas fa-comments"></i>
+                Categories
+            </a>
+        </li>
+        <li class="pure-menu-item">
+            <a href="/about" class="pure-menu-link">
+                <i class="fas fa-smile"></i>
+                About
+            </a>
+        </li>
+    </ul>
+    <ul class="pure-menu-list pull-right">
+        
+        <li class="pure-menu-item">
+            <a href="https://github.com/example" title="Github" class="pure-menu-link">
+                <i class="fab fa-github"></i>
+                <span class="hide">Github</span>
+            </a>
+        </li>
+        
+        
+        <li class="pure-menu-item">
+            <a href="http://twitter.com/example" title="@pravin" class="pure-menu-link">
+                <i class="fab fa-twitter-square"></i>
+                <span class="hide">Twitter</span>
+            </a>
+        </li>
+        
+        
+        <li class="pure-menu-item">
+            <a href="http://uk.linkedin.com/in/example" title="Linked In" class="pure-menu-link">
+                <i class="fab fa-linkedin"></i>
+                <span class="hide">LinkedIn</span>
+            </a>
+        </li>
+        
+        
+        
+        <li class="pure-menu-item">
+            <a href="/posts/index.xml" title="Atom Feed" class="pure-menu-link">
+                <i class="fas fa-rss-square"></i>
+                <span class="hide">RSS Feed</span>
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="pure-u-1">
+    <div class="pad">
+    </div>
+</div>
+<div class="pure-g">
+
+
+<div id="content" class="pure-u-1 pure-u-md-3-4 pure-u-sm-1">
+    <div class="pad">
+<div class="date">
+    <time pubdate="2010-07-11">July 11, 2010</time>
+    <span class="author">by Vitor Chagas</span>
+</div>
+
+<article>
+    <h1><a href="/vchagas69.github.io/public/2010/07/11/managing-available-memory-in-a-r-session/">Managing available memory in a R session</a></h1>
+    <div class="tags">
+        
+    </div>
+    <p>In R, the consumed (available) memory is something that needs to be monitored continuously.</p>
+<p>Here&rsquo;s a useful trick I found in stackoverflow.com.</p>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#228b22"># improved list of objects</span>
+.ls.objects &lt;- <span style="color:#008b45">function </span>(pos = <span style="color:#b452cd">1</span>, pattern, order.by,
+decreasing=<span style="color:#8b008b;font-weight:bold">FALSE</span>, head=<span style="color:#8b008b;font-weight:bold">FALSE</span>, n=<span style="color:#b452cd">5</span>) {
+napply &lt;- <span style="color:#008b45">function</span>(names, fn) <span style="color:#008b45">sapply</span>(names, <span style="color:#008b45">function</span>(x)
+<span style="color:#008b45">fn</span>(<span style="color:#008b45">get</span>(x, pos = pos)))
+names &lt;- <span style="color:#008b45">ls</span>(pos = pos, pattern = pattern)
+obj.class &lt;- <span style="color:#008b45">napply</span>(names, <span style="color:#008b45">function</span>(x) <span style="color:#008b45">as.character</span>(<span style="color:#008b45">class</span>(x))[1])
+obj.mode &lt;- <span style="color:#008b45">napply</span>(names, mode)
+obj.type &lt;- <span style="color:#008b45">ifelse</span>(<span style="color:#008b45">is.na</span>(obj.class), obj.mode, obj.class)
+obj.size &lt;- <span style="color:#008b45">napply</span>(names, object.size)
+obj.prettysize &lt;- <span style="color:#008b45">sapply</span>(obj.size, <span style="color:#008b45">function</span>(r) <span style="color:#008b45">prettyNum</span>(r, big.mark = <span style="color:#cd5555">&#34;,&#34;</span>) )
+obj.dim &lt;- <span style="color:#008b45">t</span>(<span style="color:#008b45">napply</span>(names, <span style="color:#008b45">function</span>(x)
+<span style="color:#008b45">as.numeric</span>(<span style="color:#008b45">dim</span>(x))[1:<span style="color:#b452cd">2</span>]))
+vec &lt;- <span style="color:#008b45">is.na</span>(obj.dim)[, <span style="color:#b452cd">1</span>] &amp; (obj.type != <span style="color:#cd5555">&#34;function&#34;</span>)
+obj.dim[vec, <span style="color:#b452cd">1</span>] &lt;- <span style="color:#008b45">napply</span>(names, length)[vec]
+out &lt;- <span style="color:#008b45">data.frame</span>(obj.type, obj.size,obj.prettysize, obj.dim)
+<span style="color:#008b45">names</span>(out) &lt;- <span style="color:#008b45">c</span>(<span style="color:#cd5555">&#34;Type&#34;</span>, <span style="color:#cd5555">&#34;Size&#34;</span>, <span style="color:#cd5555">&#34;PrettySize&#34;</span>, <span style="color:#cd5555">&#34;Rows&#34;</span>, <span style="color:#cd5555">&#34;Columns&#34;</span>)
+<span style="color:#008b45">if </span>(!<span style="color:#008b45">missing</span>(order.by))
+out &lt;- out<span style="color:#008b45">[order</span>(out[[order.by]], decreasing=decreasing), ]
+out &lt;- out<span style="color:#008b45">[c</span>(<span style="color:#cd5555">&#34;Type&#34;</span>, <span style="color:#cd5555">&#34;PrettySize&#34;</span>, <span style="color:#cd5555">&#34;Rows&#34;</span>, <span style="color:#cd5555">&#34;Columns&#34;</span>)]
+<span style="color:#008b45">names</span>(out) &lt;- <span style="color:#008b45">c</span>(<span style="color:#cd5555">&#34;Type&#34;</span>, <span style="color:#cd5555">&#34;Size&#34;</span>, <span style="color:#cd5555">&#34;Rows&#34;</span>, <span style="color:#cd5555">&#34;Columns&#34;</span>)
+<span style="color:#008b45">if </span>(head)
+out &lt;- <span style="color:#008b45">head</span>(out, n)
+out
+}
+
+<span style="color:#228b22"># shorthand</span>
+lsos &lt;- <span style="color:#008b45">function</span>(<span style="color:#8b008b;font-weight:bold">...</span>, n=<span style="color:#b452cd">10</span>) {
+<span style="color:#008b45">.ls.objects</span>(<span style="color:#8b008b;font-weight:bold">...</span>, order.by=<span style="color:#cd5555">&#34;Size&#34;</span>, decreasing=<span style="color:#8b008b;font-weight:bold">TRUE</span>, head=<span style="color:#8b008b;font-weight:bold">TRUE</span>, n=n)
+}
+</code></pre></div><p>This one is going to my <code>.Rprofile</code></p>
+
+</article>
+
+    </div>
+</div>
+
+
+                
+<div id="sidebar" class="pure-u-1 pure-u-md-1-4 pure-u-sm-1">
+    <div class="pad">
+        <a name="about"></a>
+        <h3>About Me</h3>
+        <div style="text-align: center;">
+            <img src="/img/author.png" alt="Vitor Chagas" class="pure-img" />
+            <p><em>Something about me</em></p>
+        </div>
+
+        <h3>Latest Articles</h3>
+        <div class="pure-menu pure-menu-open">
+            <ul class="pure-menu-list">
+                
+                <li class="pure-menu-item">
+                    <a href="/vchagas69.github.io/public/2020/09/06/under-construction/" class="pure-menu-link">Under construction!<br>
+                        <small></small>
+                    </a>
+                </li>
+                
+                <li class="pure-menu-item">
+                    <a href="/vchagas69.github.io/public/2016/12/30/a-plain-markdown-post/" class="pure-menu-link">A Plain Markdown Post<br>
+                        <small></small>
+                    </a>
+                </li>
+                
+                <li class="pure-menu-item">
+                    <a href="/vchagas69.github.io/public/2016/07/23/hello-r-markdown/" class="pure-menu-link">Hello R Markdown<br>
+                        <small></small>
+                    </a>
+                </li>
+                
+                <li class="pure-menu-item">
+                    <a href="/vchagas69.github.io/public/2015/07/23/hello-r-markdown/" class="pure-menu-link">Hello R Markdown<br>
+                        <small></small>
+                    </a>
+                </li>
+                
+                <li class="pure-menu-item">
+                    <a href="/vchagas69.github.io/public/2015/01/01/lorem-ipsum/" class="pure-menu-link">Lorem Ipsum<br>
+                        <small></small>
+                    </a>
+                </li>
+                
+                <li class="pure-menu-item">
+                    <a href="/vchagas69.github.io/public/2014/07/14/blogging-with-r-markdown/" class="pure-menu-link">Blogging with R Markdown<br>
+                        <small></small>
+                    </a>
+                </li>
+                
+                <li class="pure-menu-item">
+                    <a href="/vchagas69.github.io/public/2013/08/19/a-way-to-simplify-package-use-on-a-r-project/" class="pure-menu-link">A way to simplify package use on a R project<br>
+                        <small></small>
+                    </a>
+                </li>
+                
+                <li class="pure-menu-item">
+                    <a href="/vchagas69.github.io/public/2013/08/10/mapping-earthquakes-over-the-past-30-days/" class="pure-menu-link">Mapping Earthquakes Over the Past 30 Days<br>
+                        <small></small>
+                    </a>
+                </li>
+                
+                <li class="pure-menu-item">
+                    <a href="/vchagas69.github.io/public/2010/07/11/managing-available-memory-in-a-r-session/" class="pure-menu-link">Managing available memory in a R session<br>
+                        <small></small>
+                    </a>
+                </li>
+                
+                <li class="pure-menu-item">
+                    <a href="/vchagas69.github.io/public/2009/08/20/goodbye-windows-hello-linux/" class="pure-menu-link">Goodbye Windows ... Hello Linux <br>
+                        <small></small>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+
+        <h3>Categories</h3>
+        <div style="text-align:center" class="tags">
+            
+            
+            <a href="/tags/plot" class="pure-button"> plot
+                <small>(2)</small></a>
+            
+            
+            
+            <a href="/tags/r-markdown" class="pure-button"> r-markdown
+                <small>(2)</small></a>
+            
+            
+            
+            <a href="/tags/regression" class="pure-button"> regression
+                <small>(2)</small></a>
+            
+            
+            
+            
+            
+            
+        </div>
+    </div> 
+</div> 
+
+                
+            </div><div class="pure-g">
+	<footer class="pure-u-1 pure-u-md-1 pure-u-sm-1">
+		<p>This page and its contents are copyright &copy; 2020,
+			<a href="">Vitor Chagas</a>.</p>
+		<p><a href="https://github.com/pravin/hugo-theme-prav">Theme Prav</a> by <a href="https://cto.me.uk">Pravin
+				Paratey</a></p>
+	</footer>
+
+	<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js"
+		integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
+		crossorigin="anonymous"></script>
+</div></div></body>
+</html>

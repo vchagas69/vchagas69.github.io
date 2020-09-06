@@ -1,0 +1,75 @@
+baseurl = "vchagas69.github.io/public"
+languageCode = "en-gb"
+title = "A Portuguese Actuary"
+theme = "hugo-theme-prav"
+pygmentsCodeFences = "true"
+pygmentsStyle = "perldoc"
+
+# If you want to track using GA or use disqus for comments, 
+# uncomment the following and add the correct values
+#googleanalytics = ""
+#disqusShortname = ""
+
+# The settings below are used throughout the theme.
+# Please update!
+[params]
+  title = "Hugo Theme - Prav"
+  tagline = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  author = "Vitor Chagas"
+  authorImgPath = "/img/author.png"
+  authorBlurb = "Something about me"
+  
+  # options for highlight.js (version, additional languages, and theme)
+  #highlightjsVersion = "9.12.0"
+  #highlightjsCDN = "//cdnjs.cloudflare.com/ajax/libs"
+  #highlightjsLang = ["r", "yaml"]
+  #highlightjsTheme = "github"
+
+  MathJaxCDN = "//cdnjs.cloudflare.com/ajax/libs"
+  MathJaxVersion = "2.7.5"
+
+  # path to the favicon, under "static"
+  favicon = "favicon.ico"
+    
+# If you do not want a social icon, just comment it out
+# Please update the example values!
+
+[social]
+  email = "mailto:example@example.com"
+  twitter = "http://twitter.com/example"
+  github = "https://github.com/example"
+  linkedin = "http://uk.linkedin.com/in/example"
+
+# Set unsafe mode to allow markdownify to work with goldmark
+# This is important. Please do not delete. It is used to re-render markdown
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+
+
+[permalinks]
+    post = "/:year/:month/:day/:slug/"
+
+[[menu.main]]
+    name = "About"
+    url = "/about/"
+[[menu.main]]
+    name = "Posts"
+    url = "/post/"
+[[menu.main]]
+    name = "GitHub"
+    url = "https://github.com/rstudio/blogdown"
+[[menu.main]]
+    name = "Twitter"
+    url = "https://twitter.com/rstudio"
+
+
+    [params.logo]
+    url = "logo.png"
+    width = 50
+    height = 50
+    alt = "Logo"
