@@ -2,36 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>R Markdown on A Portuguese Actuary</title>
-<<<<<<< HEAD
     <link>/vchagas69.github.io/public/tags/r-markdown/</link>
-=======
-    <link>/vchagas69.github.io/tags/r-markdown/</link>
->>>>>>> fce113e627c1533a8ce3a8b254f5eb957259d17e
     <description>Recent content in R Markdown on A Portuguese Actuary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Sat, 23 Jul 2016 21:13:14 -0500</lastBuildDate>
     
-<<<<<<< HEAD
 	<atom:link href="/vchagas69.github.io/public/tags/r-markdown/index.xml" rel="self" type="application/rss+xml" />
-=======
-	<atom:link href="/vchagas69.github.io/tags/r-markdown/index.xml" rel="self" type="application/rss+xml" />
->>>>>>> fce113e627c1533a8ce3a8b254f5eb957259d17e
     
     
     <item>
       <title>Hello R Markdown</title>
-<<<<<<< HEAD
       <link>/vchagas69.github.io/public/2016/07/23/hello-r-markdown/</link>
       <pubDate>Sat, 23 Jul 2016 21:13:14 -0500</pubDate>
       
       <guid>/vchagas69.github.io/public/2016/07/23/hello-r-markdown/</guid>
-=======
-      <link>/vchagas69.github.io/2016/07/23/hello-r-markdown/</link>
-      <pubDate>Sat, 23 Jul 2016 21:13:14 -0500</pubDate>
-      
-      <guid>/vchagas69.github.io/2016/07/23/hello-r-markdown/</guid>
->>>>>>> fce113e627c1533a8ce3a8b254f5eb957259d17e
       <description>R Markdown This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
 You can embed an R code chunk like this:
 summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.</description>
@@ -39,17 +24,10 @@ summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 2
     
     <item>
       <title>Hello R Markdown</title>
-<<<<<<< HEAD
       <link>/vchagas69.github.io/public/2015/07/23/hello-r-markdown/</link>
       <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
       
       <guid>/vchagas69.github.io/public/2015/07/23/hello-r-markdown/</guid>
-=======
-      <link>/vchagas69.github.io/2015/07/23/hello-r-markdown/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
-      
-      <guid>/vchagas69.github.io/2015/07/23/hello-r-markdown/</guid>
->>>>>>> fce113e627c1533a8ce3a8b254f5eb957259d17e
       <description>R Markdown This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
 You can embed an R code chunk like this:
 summary(cars) ## speed dist  ## Min. : 4.0 Min. : 2.00  ## 1st Qu.:12.0 1st Qu.: 26.00  ## Median :15.0 Median : 36.00  ## Mean :15.4 Mean : 42.</description>

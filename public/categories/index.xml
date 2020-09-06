@@ -2,68 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on A Portuguese Actuary</title>
-<<<<<<< HEAD
     <link>/vchagas69.github.io/public/categories/</link>
-=======
-    <link>/vchagas69.github.io/categories/</link>
->>>>>>> fce113e627c1533a8ce3a8b254f5eb957259d17e
     <description>Recent content in Categories on A Portuguese Actuary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Sun, 06 Sep 2020 00:00:00 +0000</lastBuildDate>
     
-<<<<<<< HEAD
 	<atom:link href="/vchagas69.github.io/public/categories/index.xml" rel="self" type="application/rss+xml" />
-=======
-	<atom:link href="/vchagas69.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
->>>>>>> fce113e627c1533a8ce3a8b254f5eb957259d17e
     
     
     <item>
       <title>Other</title>
-<<<<<<< HEAD
       <link>/vchagas69.github.io/public/categories/other/</link>
       <pubDate>Sun, 06 Sep 2020 00:00:00 +0000</pubDate>
       
       <guid>/vchagas69.github.io/public/categories/other/</guid>
-=======
-      <link>/vchagas69.github.io/categories/other/</link>
-      <pubDate>Sun, 06 Sep 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/vchagas69.github.io/categories/other/</guid>
->>>>>>> fce113e627c1533a8ce3a8b254f5eb957259d17e
       <description></description>
     </item>
     
     <item>
       <title>R</title>
-<<<<<<< HEAD
       <link>/vchagas69.github.io/public/categories/r/</link>
       <pubDate>Sat, 23 Jul 2016 21:13:14 -0500</pubDate>
       
       <guid>/vchagas69.github.io/public/categories/r/</guid>
-=======
-      <link>/vchagas69.github.io/categories/r/</link>
-      <pubDate>Sat, 23 Jul 2016 21:13:14 -0500</pubDate>
-      
-      <guid>/vchagas69.github.io/categories/r/</guid>
->>>>>>> fce113e627c1533a8ce3a8b254f5eb957259d17e
       <description></description>
     </item>
     
     <item>
       <title>Linux</title>
-<<<<<<< HEAD
       <link>/vchagas69.github.io/public/categories/linux/</link>
       <pubDate>Thu, 20 Aug 2009 00:00:00 +0000</pubDate>
       
       <guid>/vchagas69.github.io/public/categories/linux/</guid>
-=======
-      <link>/vchagas69.github.io/categories/linux/</link>
-      <pubDate>Thu, 20 Aug 2009 00:00:00 +0000</pubDate>
-      
-      <guid>/vchagas69.github.io/categories/linux/</guid>
->>>>>>> fce113e627c1533a8ce3a8b254f5eb957259d17e
       <description></description>
     </item>
     

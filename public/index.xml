@@ -1,11 +1,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>A Portuguese Actuary </title>
-<<<<<<< HEAD
         <link>/vchagas69.github.io/public/</link>
-=======
-        <link>/vchagas69.github.io/</link>
->>>>>>> fce113e627c1533a8ce3a8b254f5eb957259d17e
         <language>en-us</language>
         <author>Vitor Chagas</author>
         <rights>(c) 2020</rights>
@@ -15,17 +11,10 @@
         
             <item>
             <title>Posts</title>
-<<<<<<< HEAD
             <link>/vchagas69.github.io/public/post/</link>
             <pubDate>Sun, 06 Sep 2020 00:00:00 UTC</pubDate>
             <author>Vitor Chagas</author>
             <guid>/vchagas69.github.io/public/post/</guid>
-=======
-            <link>/vchagas69.github.io/post/</link>
-            <pubDate>Sun, 06 Sep 2020 00:00:00 UTC</pubDate>
-            <author>Vitor Chagas</author>
-            <guid>/vchagas69.github.io/post/</guid>
->>>>>>> fce113e627c1533a8ce3a8b254f5eb957259d17e
             <description></description>
             </item>
         
