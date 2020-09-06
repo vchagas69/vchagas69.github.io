@@ -2,57 +2,100 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on A Portuguese Actuary</title>
+<<<<<<< HEAD
     <link>/vchagas69.github.io/public/tags/</link>
+=======
+    <link>/vchagas69.github.io/tags/</link>
+>>>>>>> fce113e627c1533a8ce3a8b254f5eb957259d17e
     <description>Recent content in Tags on A Portuguese Actuary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Sat, 23 Jul 2016 21:13:14 -0500</lastBuildDate>
     
+<<<<<<< HEAD
 	<atom:link href="/vchagas69.github.io/public/tags/index.xml" rel="self" type="application/rss+xml" />
+=======
+	<atom:link href="/vchagas69.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+>>>>>>> fce113e627c1533a8ce3a8b254f5eb957259d17e
     
     
     <item>
       <title>plot</title>
+<<<<<<< HEAD
       <link>/vchagas69.github.io/public/tags/plot/</link>
       <pubDate>Sat, 23 Jul 2016 21:13:14 -0500</pubDate>
       
       <guid>/vchagas69.github.io/public/tags/plot/</guid>
+=======
+      <link>/vchagas69.github.io/tags/plot/</link>
+      <pubDate>Sat, 23 Jul 2016 21:13:14 -0500</pubDate>
+      
+      <guid>/vchagas69.github.io/tags/plot/</guid>
+>>>>>>> fce113e627c1533a8ce3a8b254f5eb957259d17e
       <description></description>
     </item>
     
     <item>
       <title>R Markdown</title>
+<<<<<<< HEAD
       <link>/vchagas69.github.io/public/tags/r-markdown/</link>
       <pubDate>Sat, 23 Jul 2016 21:13:14 -0500</pubDate>
       
       <guid>/vchagas69.github.io/public/tags/r-markdown/</guid>
+=======
+      <link>/vchagas69.github.io/tags/r-markdown/</link>
+      <pubDate>Sat, 23 Jul 2016 21:13:14 -0500</pubDate>
+      
+      <guid>/vchagas69.github.io/tags/r-markdown/</guid>
+>>>>>>> fce113e627c1533a8ce3a8b254f5eb957259d17e
       <description></description>
     </item>
     
     <item>
       <title>regression</title>
+<<<<<<< HEAD
       <link>/vchagas69.github.io/public/tags/regression/</link>
       <pubDate>Sat, 23 Jul 2016 21:13:14 -0500</pubDate>
       
       <guid>/vchagas69.github.io/public/tags/regression/</guid>
+=======
+      <link>/vchagas69.github.io/tags/regression/</link>
+      <pubDate>Sat, 23 Jul 2016 21:13:14 -0500</pubDate>
+      
+      <guid>/vchagas69.github.io/tags/regression/</guid>
+>>>>>>> fce113e627c1533a8ce3a8b254f5eb957259d17e
       <description></description>
     </item>
     
     <item>
       <title>Linux</title>
+<<<<<<< HEAD
       <link>/vchagas69.github.io/public/tags/linux/</link>
       <pubDate>Thu, 20 Aug 2009 00:00:00 +0000</pubDate>
       
       <guid>/vchagas69.github.io/public/tags/linux/</guid>
+=======
+      <link>/vchagas69.github.io/tags/linux/</link>
+      <pubDate>Thu, 20 Aug 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/vchagas69.github.io/tags/linux/</guid>
+>>>>>>> fce113e627c1533a8ce3a8b254f5eb957259d17e
       <description></description>
     </item>
     
     <item>
       <title>Puppy</title>
+<<<<<<< HEAD
       <link>/vchagas69.github.io/public/tags/puppy/</link>
       <pubDate>Thu, 20 Aug 2009 00:00:00 +0000</pubDate>
       
       <guid>/vchagas69.github.io/public/tags/puppy/</guid>
+=======
+      <link>/vchagas69.github.io/tags/puppy/</link>
+      <pubDate>Thu, 20 Aug 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/vchagas69.github.io/tags/puppy/</guid>
+>>>>>>> fce113e627c1533a8ce3a8b254f5eb957259d17e
       <description></description>
     </item>
     

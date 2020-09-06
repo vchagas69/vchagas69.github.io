@@ -2,21 +2,36 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on A Portuguese Actuary</title>
+<<<<<<< HEAD
     <link>/vchagas69.github.io/public/post/</link>
+=======
+    <link>/vchagas69.github.io/post/</link>
+>>>>>>> fce113e627c1533a8ce3a8b254f5eb957259d17e
     <description>Recent content in Posts on A Portuguese Actuary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Sun, 06 Sep 2020 00:00:00 +0000</lastBuildDate>
     
+<<<<<<< HEAD
 	<atom:link href="/vchagas69.github.io/public/post/index.xml" rel="self" type="application/rss+xml" />
+=======
+	<atom:link href="/vchagas69.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+>>>>>>> fce113e627c1533a8ce3a8b254f5eb957259d17e
     
     
     <item>
       <title>Under construction!</title>
+<<<<<<< HEAD
       <link>/vchagas69.github.io/public/2020/09/06/under-construction/</link>
       <pubDate>Sun, 06 Sep 2020 00:00:00 +0000</pubDate>
       
       <guid>/vchagas69.github.io/public/2020/09/06/under-construction/</guid>
+=======
+      <link>/vchagas69.github.io/2020/09/06/under-construction/</link>
+      <pubDate>Sun, 06 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/vchagas69.github.io/2020/09/06/under-construction/</guid>
+>>>>>>> fce113e627c1533a8ce3a8b254f5eb957259d17e
       <description>Announcement! I decided to centralize everything I&amp;rsquo;ve written on different platforms be that published or unpublished!
 Please disregard the fact there is still some &amp;ldquo;sample&amp;rdquo; content &amp;hellip; for now this is work in progress during my &amp;ldquo;free&amp;rdquo; time.
 Thanks
@@ -25,20 +40,34 @@ VC</description>
     
     <item>
       <title>A Plain Markdown Post</title>
+<<<<<<< HEAD
       <link>/vchagas69.github.io/public/2016/12/30/a-plain-markdown-post/</link>
       <pubDate>Fri, 30 Dec 2016 21:49:57 -0700</pubDate>
       
       <guid>/vchagas69.github.io/public/2016/12/30/a-plain-markdown-post/</guid>
+=======
+      <link>/vchagas69.github.io/2016/12/30/a-plain-markdown-post/</link>
+      <pubDate>Fri, 30 Dec 2016 21:49:57 -0700</pubDate>
+      
+      <guid>/vchagas69.github.io/2016/12/30/a-plain-markdown-post/</guid>
+>>>>>>> fce113e627c1533a8ce3a8b254f5eb957259d17e
       <description>This is a post written in plain Markdown (*.md) instead of R Markdown (*.Rmd). The major differences are:
  You cannot run any R code in a plain Markdown document, whereas in an R Markdown document, you can embed R code chunks (```{r}); A plain Markdown post is rendered through Blackfriday, and an R Markdown document is compiled by rmarkdown and Pandoc.  There are many differences in syntax between Blackfriday&amp;rsquo;s Markdown and Pandoc&amp;rsquo;s Markdown.</description>
     </item>
     
     <item>
       <title>Hello R Markdown</title>
+<<<<<<< HEAD
       <link>/vchagas69.github.io/public/2016/07/23/hello-r-markdown/</link>
       <pubDate>Sat, 23 Jul 2016 21:13:14 -0500</pubDate>
       
       <guid>/vchagas69.github.io/public/2016/07/23/hello-r-markdown/</guid>
+=======
+      <link>/vchagas69.github.io/2016/07/23/hello-r-markdown/</link>
+      <pubDate>Sat, 23 Jul 2016 21:13:14 -0500</pubDate>
+      
+      <guid>/vchagas69.github.io/2016/07/23/hello-r-markdown/</guid>
+>>>>>>> fce113e627c1533a8ce3a8b254f5eb957259d17e
       <description>R Markdown This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
 You can embed an R code chunk like this:
 summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.</description>
@@ -46,10 +75,17 @@ summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 2
     
     <item>
       <title>Hello R Markdown</title>
+<<<<<<< HEAD
       <link>/vchagas69.github.io/public/2015/07/23/hello-r-markdown/</link>
       <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
       
       <guid>/vchagas69.github.io/public/2015/07/23/hello-r-markdown/</guid>
+=======
+      <link>/vchagas69.github.io/2015/07/23/hello-r-markdown/</link>
+      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
+      
+      <guid>/vchagas69.github.io/2015/07/23/hello-r-markdown/</guid>
+>>>>>>> fce113e627c1533a8ce3a8b254f5eb957259d17e
       <description>R Markdown This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
 You can embed an R code chunk like this:
 summary(cars) ## speed dist  ## Min. : 4.0 Min. : 2.00  ## 1st Qu.:12.0 1st Qu.: 26.00  ## Median :15.0 Median : 36.00  ## Mean :15.4 Mean : 42.</description>
@@ -57,19 +93,33 @@ summary(cars) ## speed dist  ## Min. : 4.0 Min. : 2.00  ## 1st Qu.:12.0 1st Qu.:
     
     <item>
       <title>Lorem Ipsum</title>
+<<<<<<< HEAD
       <link>/vchagas69.github.io/public/2015/01/01/lorem-ipsum/</link>
       <pubDate>Thu, 01 Jan 2015 13:09:13 -0600</pubDate>
       
       <guid>/vchagas69.github.io/public/2015/01/01/lorem-ipsum/</guid>
+=======
+      <link>/vchagas69.github.io/2015/01/01/lorem-ipsum/</link>
+      <pubDate>Thu, 01 Jan 2015 13:09:13 -0600</pubDate>
+      
+      <guid>/vchagas69.github.io/2015/01/01/lorem-ipsum/</guid>
+>>>>>>> fce113e627c1533a8ce3a8b254f5eb957259d17e
       <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
     </item>
     
     <item>
       <title>Blogging with R Markdown</title>
+<<<<<<< HEAD
       <link>/vchagas69.github.io/public/2014/07/14/blogging-with-r-markdown/</link>
       <pubDate>Mon, 14 Jul 2014 00:00:00 +0000</pubDate>
       
       <guid>/vchagas69.github.io/public/2014/07/14/blogging-with-r-markdown/</guid>
+=======
+      <link>/vchagas69.github.io/2014/07/14/blogging-with-r-markdown/</link>
+      <pubDate>Mon, 14 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/vchagas69.github.io/2014/07/14/blogging-with-r-markdown/</guid>
+>>>>>>> fce113e627c1533a8ce3a8b254f5eb957259d17e
       <description>R Markdown This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
 When you click the Knit button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
 summary(cars) ## speed dist ## Min.</description>
@@ -77,10 +127,17 @@ summary(cars) ## speed dist ## Min.</description>
     
     <item>
       <title>A way to simplify package use on a R project</title>
+<<<<<<< HEAD
       <link>/vchagas69.github.io/public/2013/08/19/a-way-to-simplify-package-use-on-a-r-project/</link>
       <pubDate>Mon, 19 Aug 2013 00:00:00 +0000</pubDate>
       
       <guid>/vchagas69.github.io/public/2013/08/19/a-way-to-simplify-package-use-on-a-r-project/</guid>
+=======
+      <link>/vchagas69.github.io/2013/08/19/a-way-to-simplify-package-use-on-a-r-project/</link>
+      <pubDate>Mon, 19 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/vchagas69.github.io/2013/08/19/a-way-to-simplify-package-use-on-a-r-project/</guid>
+>>>>>>> fce113e627c1533a8ce3a8b254f5eb957259d17e
       <description>Introduction One of the steps that I always do when I begin an R script is to check if all the needed packages are installed, and if not install them.
 That way I know that the script won’t crash on another computer because of a missing package (one less reason to crash :D).
 Lately I’ve been thinking about the subject of code reuse and decided to transform my block of code in to an R function.</description>
@@ -88,10 +145,17 @@ Lately I’ve been thinking about the subject of code reuse and decided to trans
     
     <item>
       <title>Mapping Earthquakes Over the Past 30 Days</title>
+<<<<<<< HEAD
       <link>/vchagas69.github.io/public/2013/08/10/mapping-earthquakes-over-the-past-30-days/</link>
       <pubDate>Sat, 10 Aug 2013 00:00:00 +0000</pubDate>
       
       <guid>/vchagas69.github.io/public/2013/08/10/mapping-earthquakes-over-the-past-30-days/</guid>
+=======
+      <link>/vchagas69.github.io/2013/08/10/mapping-earthquakes-over-the-past-30-days/</link>
+      <pubDate>Sat, 10 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/vchagas69.github.io/2013/08/10/mapping-earthquakes-over-the-past-30-days/</guid>
+>>>>>>> fce113e627c1533a8ce3a8b254f5eb957259d17e
       <description>Introduction After reading this post I decided to try it and adapt to my own needs.
 This is just a simple example that uses real-time data from the U.S. Geological Survey.
 This shows the location of earthquakes with any magnitude over the last month around Puerto Rico (just had to pick some place with earthquakes!).
@@ -100,10 +164,17 @@ The Code #======================================================================
     
     <item>
       <title>Managing available memory in a R session</title>
+<<<<<<< HEAD
       <link>/vchagas69.github.io/public/2010/07/11/managing-available-memory-in-a-r-session/</link>
       <pubDate>Sun, 11 Jul 2010 00:00:00 +0000</pubDate>
       
       <guid>/vchagas69.github.io/public/2010/07/11/managing-available-memory-in-a-r-session/</guid>
+=======
+      <link>/vchagas69.github.io/2010/07/11/managing-available-memory-in-a-r-session/</link>
+      <pubDate>Sun, 11 Jul 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/vchagas69.github.io/2010/07/11/managing-available-memory-in-a-r-session/</guid>
+>>>>>>> fce113e627c1533a8ce3a8b254f5eb957259d17e
       <description>In R, the consumed (available) memory is something that needs to be monitored continuously.
 Here&amp;rsquo;s a useful trick I found in stackoverflow.com.
 # improved list of objects .ls.objects &amp;lt;- function (pos = 1, pattern, order.by, decreasing=FALSE, head=FALSE, n=5) { napply &amp;lt;- function(names, fn) sapply(names, function(x) fn(get(x, pos = pos))) names &amp;lt;- ls(pos = pos, pattern = pattern) obj.class &amp;lt;- napply(names, function(x) as.character(class(x))[1]) obj.mode &amp;lt;- napply(names, mode) obj.type &amp;lt;- ifelse(is.na(obj.class), obj.mode, obj.</description>
@@ -111,10 +182,17 @@ Here&amp;rsquo;s a useful trick I found in stackoverflow.com.
     
     <item>
       <title>Goodbye Windows ... Hello Linux </title>
+<<<<<<< HEAD
       <link>/vchagas69.github.io/public/2009/08/20/goodbye-windows-hello-linux/</link>
       <pubDate>Thu, 20 Aug 2009 00:00:00 +0000</pubDate>
       
       <guid>/vchagas69.github.io/public/2009/08/20/goodbye-windows-hello-linux/</guid>
+=======
+      <link>/vchagas69.github.io/2009/08/20/goodbye-windows-hello-linux/</link>
+      <pubDate>Thu, 20 Aug 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/vchagas69.github.io/2009/08/20/goodbye-windows-hello-linux/</guid>
+>>>>>>> fce113e627c1533a8ce3a8b254f5eb957259d17e
       <description>After several (failed) attempts of adopting Linux as my main Operating System, I finally found a friendly enough Linux distro for a long time Microsoft user.
 It is Puppy Linux (http://www.puppylinux.org) and is currently on release 4.20.
 Download the CD image from the URL below.
