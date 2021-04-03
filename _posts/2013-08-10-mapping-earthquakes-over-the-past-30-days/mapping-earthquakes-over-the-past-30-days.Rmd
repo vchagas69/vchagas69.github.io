@@ -1,0 +1,124 @@
+---
+title: Mapping Earthquakes Over the Past 30 Days
+description: |
+  In this post we present a classic finance use case using the PerformanceAnalytics, quantmod, and dygraphs packages. We'll demonstrate importing stock data, building a portfolio, and then calculating the Sharpe Ratio. 
+preview: preview.png
+author: Vitor Chagas
+date: 2013-08-10
+slug: mapping-earthquakes-over-the-past-30-days
+categories:
+  - R
+output: 
+  distill::distill_article:
+    highlight: default
+    self_contained: false
+    toc: true
+repository_url: https://github.com/jjallaire/reproducible-finance-with-r/
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE, echo = TRUE)
+# packages required for this post
+for (pkg in c('ggmap')) {
+  if (!requireNamespace(pkg, quietly = TRUE)) install.packages(pkg)
+}
+```
+
+## Introduction
+
+After reading this [post](http://statistical-research.com/earthquakes-over-the-past-7-days/) I decided to try it and adapt to my own needs.
+
+This is just a simple example that uses real-time data from the U.S. Geological Survey.
+
+This shows the location of earthquakes with any magnitude over the last month around Puerto Rico (just had to pick some place with earthquakes!).
+
+## The Code
+
+```{r, eval = TRUE}
+#===========================================================================
+# project : aportugueseactuary.blogspot.pt
+#  script : Mapping_Earthquakes_Over_the_Past30_Days.R
+#  author : Vitor Chagas
+# updated : 2013.08.10
+#===========================================================================
+
+#---------------------------------------------------------------------------
+# reset workspace
+#---------------------------------------------------------------------------
+
+rm(list = ls())
+gc()
+
+#---------------------------------------------------------------------------
+# create & set work directory root
+#---------------------------------------------------------------------------
+
+# change as needed
+workdir <- '.'
+
+dir.create(workdir, recursive=TRUE)
+setwd(workdir)
+rm(workdir)
+
+#---------------------------------------------------------------------------
+# create folder tree (needed folders)
+#---------------------------------------------------------------------------
+
+#dir.create('data')
+
+#---------------------------------------------------------------------------
+# install & load necessary packages
+#---------------------------------------------------------------------------
+
+necessary = c('ggmap')
+
+installed = necessary %in% .packages(all.available = TRUE)
+
+# install
+if (length(necessary[!installed]) >=1) 
+  install.packages(necessary[!installed])
+
+# load
+for(pkg in necessary) 
+  library(pkg, character.only=TRUE)  
+
+rm(necessary, installed, pkg)
+
+#---------------------------------------------------------------------------
+# get earthquake data
+#---------------------------------------------------------------------------
+
+file.url <- c(
+  url='http://earthquake.usgs.gov/',
+  path='earthquakes/feed/v1.0/summary/',
+  file='all_month.csv'
+  )
+
+eq <- read.table(file=paste(file.url, collapse=''),
+                 fill=TRUE, sep=',', header=TRUE)
+
+# rename columns
+names(eq)[2] <- 'lat'
+names(eq)[3] <- 'lon'
+
+# discretize magnitude into 5 intervals
+eq$mag.size <- findInterval(eq$mag, c(0,2,4,6,8,10))
+
+#---------------------------------------------------------------------------
+# generate map
+#---------------------------------------------------------------------------
+
+# map center (some place with earthquakes)
+center <- geocode('Puerto Rico')
+location <- c(center$lon,center$lat)
+
+# get map from Google
+map <- get_map(location = location, zoom=7, maptype='roadmap')
+
+# display earthquake data
+ggmap(map, extent = 'device') +
+  geom_point(data=eq,
+             mapping=aes(x = lon, y = lat, colour=mag)) + 
+  scale_colour_gradient(limits=c(0, 9.9), low="yellow", high="red")
+```
+

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>A Portuguese Actuary</title>
+    <link>http://vchagas69.github.io/</link>
+    <atom:link href="http://vchagas69.github.io/index.xml" rel="self" type="application/rss+xml"/>
+    <description>My Blog
+</description>
+    <generator>Distill</generator>
+    <lastBuildDate>Sat, 03 Apr 2021 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Welcome to My Blog</title>
+      <dc:creator>Nora Jones</dc:creator>
+      <link>http://vchagas69.github.io/posts/welcome</link>
+      <description>Welcome to our new blog, My Blog. We hope you enjoy 
+reading what we have to say!</description>
+      <guid>http://vchagas69.github.io/posts/welcome</guid>
+      <pubDate>Sat, 03 Apr 2021 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>The Sharpe Ratio</title>
+      <link>http://vchagas69.github.io/posts/2016-11-08-sharpe-ratio</link>
+      <description>In this post we present a classic finance use case using the PerformanceAnalytics, quantmod, and dygraphs packages. We'll demonstrate importing stock data, building a portfolio, and then calculating the Sharpe Ratio.</description>
+      <category>portfolio theory</category>
+      <category>dygraphs</category>
+      <guid>http://vchagas69.github.io/posts/2016-11-08-sharpe-ratio</guid>
+      <pubDate>Tue, 08 Nov 2016 00:00:00 +0000</pubDate>
+      <media:content url="http://vchagas69.github.io/posts/2016-11-08-sharpe-ratio/preview.png" medium="image" type="image/png" width="1644" height="1014"/>
+    </item>
+    <item>
+      <title>Mapping Earthquakes Over the Past 30 Days</title>
+      <dc:creator>Vitor Chagas</dc:creator>
+      <link>http://vchagas69.github.io/posts/2013-08-10-mapping-earthquakes-over-the-past-30-days</link>
+      <description>In this post we present a classic finance use case using the PerformanceAnalytics, quantmod, and dygraphs packages. We'll demonstrate importing stock data, building a portfolio, and then calculating the Sharpe Ratio.</description>
+      <category>R</category>
+      <guid>http://vchagas69.github.io/posts/2013-08-10-mapping-earthquakes-over-the-past-30-days</guid>
+      <pubDate>Sat, 10 Aug 2013 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Puppy Linux : How to create an ISO image from a CD</title>
+      <link>http://vchagas69.github.io/posts/2012-07-29</link>
+      <description>In this post we present a classic finance use case using the PerformanceAnalytics, quantmod, and dygraphs packages. We'll demonstrate importing stock data, building a portfolio, and then calculating the Sharpe Ratio.</description>
+      <category>puppy</category>
+      <category>linux</category>
+      <guid>http://vchagas69.github.io/posts/2012-07-29</guid>
+      <pubDate>Sun, 29 Jul 2012 00:00:00 +0000</pubDate>
+    </item>
+  </channel>
+</rss>

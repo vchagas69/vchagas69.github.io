@@ -1,12 +1,16 @@
-name: "."
-title: "My Blog"
+name: "vchagas69.github.io"
+title: "A Portuguese Actuary"
 description: |
   My Blog
+base_url: http://vchagas69.github.io/
 output_dir: "docs"
 navbar:
+  logo: images/me.jpg
   right:
     - text: "Home"
       href: index.html
     - text: "About"
       href: about.html
+    - icon: fa fa-rss
+      href: index.xml
 output: distill::distill_article
