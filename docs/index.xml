@@ -7,15 +7,16 @@
     <description>My Blog
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Sat, 03 Apr 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 07 Aug 2022 00:00:00 +0000</lastBuildDate>
     <item>
-      <title>Welcome to My Blog</title>
-      <dc:creator>Nora Jones</dc:creator>
-      <link>http://vchagas69.github.io/posts/welcome</link>
-      <description>Welcome to our new blog, My Blog. We hope you enjoy 
-reading what we have to say!</description>
-      <guid>http://vchagas69.github.io/posts/welcome</guid>
-      <pubDate>Sat, 03 Apr 2021 00:00:00 +0000</pubDate>
+      <title>R memory management</title>
+      <link>http://vchagas69.github.io/posts/2022-08-07-r-memory-management</link>
+      <description>In this post we present a classic finance use case using the PerformanceAnalytics, quantmod, and dygraphs packages. We'll demonstrate importing stock data, building a portfolio, and then calculating the Sharpe Ratio.</description>
+      <category>portfolio theory</category>
+      <category>dygraphs</category>
+      <guid>http://vchagas69.github.io/posts/2022-08-07-r-memory-management</guid>
+      <pubDate>Sun, 07 Aug 2022 00:00:00 +0000</pubDate>
+      <media:content url="http://vchagas69.github.io/posts/2022-08-07-r-memory-management/preview.png" medium="image" type="image/png" width="1644" height="1014"/>
     </item>
     <item>
       <title>The Sharpe Ratio</title>
@@ -44,6 +45,35 @@ reading what we have to say!</description>
       <category>linux</category>
       <guid>http://vchagas69.github.io/posts/2012-07-29</guid>
       <pubDate>Sun, 29 Jul 2012 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Manage the available memory in an R session</title>
+      <dc:creator>Vitor Chagas</dc:creator>
+      <link>http://vchagas69.github.io/posts/2010-07-11-manage-the-available-memory-in-an-r-session</link>
+      <description>A small function to manage memory in R.</description>
+      <category>r-project</category>
+      <guid>http://vchagas69.github.io/posts/2010-07-11-manage-the-available-memory-in-an-r-session</guid>
+      <pubDate>Sun, 11 Jul 2010 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>The Actuarial Toolkit</title>
+      <dc:creator>Vitor Chagas</dc:creator>
+      <link>http://vchagas69.github.io/posts/2009-08-08-the-actuarial-toolkit</link>
+      <description>Some comments about the lack of proper tools for Actuarial work in Portugal.</description>
+      <category>actuary</category>
+      <category>excel</category>
+      <category>r-project</category>
+      <guid>http://vchagas69.github.io/posts/2009-08-08-the-actuarial-toolkit</guid>
+      <pubDate>Sat, 08 Aug 2009 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Welcome</title>
+      <dc:creator>Vitor Chagas</dc:creator>
+      <link>http://vchagas69.github.io/posts/2009-08-01-welcome</link>
+      <description>Welcome to my blog, A Portuguese Actuary. I hope you enjoy 
+reading what I have to say!</description>
+      <guid>http://vchagas69.github.io/posts/2009-08-01-welcome</guid>
+      <pubDate>Sat, 01 Aug 2009 00:00:00 +0000</pubDate>
     </item>
   </channel>
 </rss>

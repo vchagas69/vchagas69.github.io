@@ -1,0 +1,28 @@
+---
+title: "Welcome"
+description: |
+  Welcome to my blog, A Portuguese Actuary. I hope you enjoy 
+  reading what I have to say!
+author:
+  - name: Vitor Chagas
+    url: https://vchagas69.github.io
+date: 2009-08-01
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+Being this the first post, it would be the perfect place to state what I intend to accomplish with the blog.
+
+The idea was to have a place where I could document my findings regarding literature, techniques and software that could simplify (my) work as an actuary.
+
+Hopefully it will be helpful for someone else (than me) and I apologize for my English :)
+
+**Note:** I'm compiling and translating from Portuguese some posts from my other blogs.
+
+

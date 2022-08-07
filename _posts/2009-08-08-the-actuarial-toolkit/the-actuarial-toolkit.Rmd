@@ -1,0 +1,36 @@
+---
+title: "The Actuarial Toolkit"
+description: |
+  Some comments about the lack of proper tools for Actuarial work in Portugal.
+author:
+  - name: Vitor Chagas
+    url: https://vchagas69.github.io
+date: 2009-08-08
+categories:
+  - actuary
+  - excel
+  - r-project
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+Traditionally, at least in Portugal, actuaries are considered as "[Jack of all trades](http://en.wikipedia.org/wiki/Jack_of_all_trades,_master_of_none)" in their working places, being asked to do all sort of «technical» tasks. Mainly because they are able to do these tasks, fast and accurately, even though, most of them lay outside their responsibility area.
+
+There's not much that can be done about that. As such, I don't think it's efficient or wise, that [Microsoft Excel](http://en.wikipedia.org/wiki/Microsoft_Excel),  should be almost the only tool used by a great majority of the actuaries. I'm not discarding it's versatility, specially if we are considering it's macro programming facilities with Visual Basic for Applications (VBA).
+
+But a spreadsheet, as it's name implies, was created to be used as large sheet (of paper) to do some type of calculations. All the rest are convenience functionalities. It was not designed to be used as a database or to design charts, even if it is widely used, for that, all over the world. It is a generalist rather than a specialist tool for these tasks, as such it's limitations (some have been addressed in the latest versions).
+
+
+The workload increases every month and there is a pressing need to do more in the same time frame. Upgrading to faster computers isn't a viable option, it just delays the problem.
+
+Actuaries need to use other tools that allow to work faster and do things that Excel simply can't do.
+
+**They need to build their own actuarial toolkit.**
+
+Just to finish this post, some years ago I found one tool that became fundamental to my loss reserving work. It's called **R** (www.r-project.org) and, in my opinion, probably the most versatile piece of software I've ever seen for mathematical type of work. 

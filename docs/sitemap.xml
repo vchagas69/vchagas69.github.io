@@ -2,26 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" version="1.0">
   <url>
     <loc>http://vchagas69.github.io/about.html</loc>
-    <lastmod>2021-04-03T15:38:42+01:00</lastmod>
+    <lastmod>2022-08-07T17:06:43+00:00</lastmod>
   </url>
   <url>
     <loc>http://vchagas69.github.io/</loc>
-    <lastmod>2021-04-03T15:38:42+01:00</lastmod>
+    <lastmod>2022-08-07T17:06:43+00:00</lastmod>
   </url>
   <url>
-    <loc>http://vchagas69.github.io/posts/welcome/</loc>
-    <lastmod>2021-04-03T15:38:42+01:00</lastmod>
+    <loc>http://vchagas69.github.io/posts/2022-08-07-r-memory-management/</loc>
+    <lastmod>2022-08-07T19:34:21+00:00</lastmod>
   </url>
   <url>
     <loc>http://vchagas69.github.io/posts/2016-11-08-sharpe-ratio/</loc>
-    <lastmod>2021-04-02T22:38:28+01:00</lastmod>
+    <lastmod>2022-08-07T17:06:43+00:00</lastmod>
   </url>
   <url>
     <loc>http://vchagas69.github.io/posts/2013-08-10-mapping-earthquakes-over-the-past-30-days/</loc>
-    <lastmod>2021-04-02T22:56:15+01:00</lastmod>
+    <lastmod>2022-08-07T17:06:43+00:00</lastmod>
   </url>
   <url>
     <loc>http://vchagas69.github.io/posts/2012-07-29/</loc>
-    <lastmod>2021-04-03T01:18:40+01:00</lastmod>
+    <lastmod>2022-08-07T17:06:43+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://vchagas69.github.io/posts/2010-07-11-manage-the-available-memory-in-an-r-session/</loc>
+    <lastmod>2022-08-07T22:02:26+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://vchagas69.github.io/posts/2009-08-08-the-actuarial-toolkit/</loc>
+    <lastmod>2022-08-07T21:44:38+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://vchagas69.github.io/posts/2009-08-01-welcome/</loc>
+    <lastmod>2022-08-07T21:19:56+00:00</lastmod>
   </url>
 </urlset>
